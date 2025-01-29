@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum tinggi halaman 100% viewport */
+}
+
+/* Konten utama akan mengisi ruang yang tersisa */
+.main-content {
+    flex: 1; /* Membuat konten utama fleksibel dan mengisi ruang yang tersisa */
+}
+/* Calendar Container */
+.calendar-container {
+    margin: 40px auto; 
+    width: 90%;
+    max-width: 950px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    padding: 30px; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+/* FullCalendar */
+#calendar {
+    width: 900px;
+    height: 500px; 
+    margin: 0 auto;
+    color: black;
+    font-size: 1.2rem; 
+}
+
+.fc-daygrid-day {
+    padding: 10px;
+}
+
+.fc-button {
+    font-size: 1.2rem;
+}
+
+.fc-event {
+    font-size: 1.1rem;
+}
+
+/* Mengubah warna teks di seluruh kalender */
+#calendar {
+    color: black !important; /* Ganti dengan warna yang diinginkan */
+}
+
+/* Mengubah warna teks untuk event di kalender */
+.fc-event {
+    color: black !important; /* Ganti dengan warna yang diinginkan */
+}
+
+/* Mengubah warna teks untuk header kalender */
+.fc-toolbar-title {
+    color: black !important; /* Ganti dengan warna yang diinginkan */
+}
+
+/* Mengubah warna teks untuk hari dalam grid */
+.fc-daygrid-day-number {
+    color: black !important; /* Ganti dengan warna yang diinginkan */
+}
+
+/* Mengubah warna teks untuk tanggal yang dipilih */
+.fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+    color: black !important; /* Ganti dengan warna yang diinginkan */
+}

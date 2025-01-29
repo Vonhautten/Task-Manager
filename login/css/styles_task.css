@@ -1,0 +1,179 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum tinggi halaman 100% viewport */
+}
+
+/* Konten utama akan mengisi ruang yang tersisa */
+.main-content {
+    flex: 1; /* Membuat konten utama fleksibel dan mengisi ruang yang tersisa */
+}
+
+.add-task-btn {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-task-btn:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.task-table-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-table th, .task-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.task-table th {
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #555;
+}
+
+.task-table tbody tr:nth-child(even) {
+    background: #f3f4f6;
+}
+
+.task-table tbody tr:hover {
+    background: #eef3f7;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.completed {
+    background: #4caf50;
+    color: #fff;
+}
+
+.status.pending {
+    background: #ff9800;
+    color: #fff;
+}
+
+/* Buttons */
+.edit-btn, .delete-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+
+    .add-task-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .task-table, .task-table th, .task-table td {
+        font-size: 12px;
+    }
+
+    .task-table th, .task-table td {
+        padding: 8px 10px;
+    }
+
+    .edit-btn, .delete-btn {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .add-task-btn {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .task-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .task-table th, .task-table td {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .task-table-section {
+        overflow-x: auto; 
+        white-space: nowrap; 
+    }
+
+    .task-table {
+        width: 100%;
+        table-layout: auto; 
+    }
+
+    .task-table th, .task-table td {
+        padding: 6px 8px; 
+        font-size: 10px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        font-size: 28px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        font-weight: bold;
+    }
+}

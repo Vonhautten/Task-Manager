@@ -1,0 +1,79 @@
+/* Pastikan body dan html mengambil seluruh tinggi layar */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Konten utama harus mengambil ruang yang tersisa */
+.main-content {
+    flex-grow: 1;
+    padding: 20px; /* Memberikan sedikit jarak untuk konten */
+}
+
+/* Dashboard Overview */
+.dashboard-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Card styling */
+.card1, .card2, .card3, .card4 {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card1 {
+    font-size: 24px;
+    background: #00d4ff;
+}
+
+.card2 {
+    font-size: 24px;
+    background: #4caf50;
+}
+
+.card3 {
+    font-size: 24px;
+    background: #ff9800;
+}
+
+.card4 {
+    background: #0094ff;
+}
+
+.card4 p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* Chart Section */
+.chart-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.chart-section canvas {
+    max-width: 100%;
+    height: 300px;
+}
+
+.chart-section h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
